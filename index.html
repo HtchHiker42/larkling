@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LARK — Language Archive and Recovery Kit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Lato:wght@400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- ══ NAV ══ -->
+<nav aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M12 2C9.5 2 7.5 3.5 6.5 5.5C5 5 3 5.5 2 7c1.5 0 2.5.5 3 1.5C3.5 9.5 3 11 3.5 12.5 4.5 11 6 10 7.5 10c.5 1.5.5 3 0 4.5C9 13.5 10.5 12.5 12 12.5s3 1 3.5 2C15 13 14.5 11.5 14 10c1.5 0 3 1 4 2.5.5-1.5 0-3-1.5-4C17.5 8 18.5 7 20 7c-1-1.5-3-2-4.5-1.5C14.5 3.5 13.5 2 12 2z"/></svg>
+      </div>
+      LARK
+    </a>
+    <div class="nav-sep" aria-hidden="true"></div>
+    <div class="nav-links">
+      <a href="#modules">Modules</a>
+      <a href="#why">Why Linguistics?</a>
+      <a href="#archive">Digital Seed Archive</a>
+    </div>
+    <div class="nav-spacer"></div>
+    <div class="nav-search" role="search" aria-label="Search">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      Search
+    </div>
+    <div class="nav-actions">
+      <button class="btn btn-ghost btn-sm" id="login-btn">Log in</button>
+      <button class="btn btn-green btn-sm" id="signup-btn">Get started</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ══ HERO ══ -->
+<section class="hero" aria-labelledby="hero-heading">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-eyebrow">A product of Lost Worlds Institute</div>
+      <h1 id="hero-heading">Language Archive and Recovery Kit</h1>
+      <p>40% of the world's roughly 7,000 languages are at risk of disappearing within the next three generations. Students are our first responders.</p>
+      <div class="hero-ctas">
+        <a href="module?id=m1" class="btn btn-white btn-lg">Start learning, free</a>
+        <a href="#modules" class="btn btn-white-outline btn-lg">Explore modules</a>
+      </div>
+      <div class="hero-stats">
+        <div><span class="hero-stat-num">7,000+</span><span class="hero-stat-label">Languages on Earth</span></div>
+        <div><span class="hero-stat-num">40%</span><span class="hero-stat-label">At risk of disappearing</span></div>
+        <div><span class="hero-stat-num">6</span><span class="hero-stat-label">LARK modules</span></div>
+      </div>
+    </div>
+
+    <div class="hero-card" aria-label="Your module progress">
+      <div class="hero-card-title">Your progress</div>
+      <div class="journey-list">
+        <a href="module?id=m1" class="journey-item">
+          <div class="journey-dot locked" data-journey="m1">1</div>
+          <div class="journey-text">
+            <div class="journey-name">M-1: Elicitation Protocol</div>
+            <div class="journey-sub">Visual prompts · Shadow transcript</div>
+          </div>
+        </a>
+        <a href="module?id=m2" class="journey-item">
+          <div class="journey-dot locked" data-journey="m2">2</div>
+          <div class="journey-text">
+            <div class="journey-name">M-2: Language Mapping</div>
+            <div class="journey-sub">Neighborhood map · UNESCO framework</div>
+          </div>
+        </a>
+        <a href="module?id=m3" class="journey-item">
+          <div class="journey-dot locked" data-journey="m3">3</div>
+          <div class="journey-text">
+            <div class="journey-name">M-3: Apprentice-Partner Model</div>
+            <div class="journey-sub">2–8 sessions · No translation</div>
+          </div>
+        </a>
+        <a href="module?id=m4" class="journey-item">
+          <div class="journey-dot locked" data-journey="m4">4</div>
+          <div class="journey-text">
+            <div class="journey-name">M-4: Magazine Portrait</div>
+            <div class="journey-sub">Distribute 15+ copies</div>
+          </div>
+        </a>
+        <a href="module?id=m5" class="journey-item">
+          <div class="journey-dot locked" data-journey="m5">5</div>
+          <div class="journey-text">
+            <div class="journey-name">M-5: Vitality Assessment</div>
+            <div class="journey-sub">Score out of 45</div>
+          </div>
+        </a>
+        <a href="module?id=m6" class="journey-item">
+          <div class="journey-dot locked" data-journey="m6">6</div>
+          <div class="journey-text">
+            <div class="journey-name">M-6: Digital Seed Archive</div>
+            <div class="journey-sub">Upload your recordings</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ STATS BAR ══ -->
+<div class="stats-bar" aria-label="About LARK">
+  <div class="stats-bar-inner">
+    <div class="stats-bar-item">
+      <span class="stats-bar-num">Lost Worlds</span>
+      <span class="stats-bar-label">A product of Lost Worlds Institute</span>
+    </div>
+    <div class="stats-bar-item">
+      <span class="stats-bar-num">60+</span>
+      <span class="stats-bar-label">Students documenting languages</span>
+    </div>
+    <div class="stats-bar-item">
+      <span class="stats-bar-num">Free</span>
+      <span class="stats-bar-label">Always open access</span>
+    </div>
+  </div>
+</div>
+
+<!-- ══ MODULES ══ -->
+<section class="section" id="modules" aria-labelledby="modules-heading">
+  <div class="section-inner">
+    <div class="section-hdr-row">
+      <div>
+        <div class="section-eyebrow">Core curriculum</div>
+        <h2 class="section-title" id="modules-heading">The six LARK modules</h2>
+        <p class="section-sub">A kit that can deepen students' interest in and exposure to the world of language endangerment. No prior experience required.</p>
+      </div>
+    </div>
+
+    <div class="featured-unit">
+      <div class="featured-unit-bar"></div>
+      <div class="featured-unit-body">
+        <div class="featured-unit-icon" aria-hidden="true">🎙️</div>
+        <div class="featured-unit-text">
+          <div class="featured-unit-eyebrow">Start here — Module 1</div>
+          <div class="featured-unit-title">Elicitation Protocol</div>
+          <div class="featured-unit-sub">Real languages live not in thought-up phrases but in stories, arguments, instructions, narratives. This module shifts interactions from interrogation to conversation.</div>
+        </div>
+        <a href="module?id=m1" class="btn btn-green btn-md">Begin M-1</a>
+      </div>
+    </div>
+
+    <div class="course-grid" role="list">
+
+      <a href="module?id=m1" class="course-card c-green" data-module="m1" role="listitem" aria-labelledby="m1-title">
+        <div class="course-card-top"></div>
+        <div class="course-card-body">
+          <div class="course-card-icon" aria-hidden="true">🎙️</div>
+          <div class="course-card-tag">Module 1</div>
+          <h3 class="course-card-title" id="m1-title">Elicitation Protocol</h3>
+          <div class="course-card-lessons">8 lessons · 4 activities</div>
+          <p class="course-card-desc">Students use a set of visual prompt cards (20–100). Prompters are images selected to provoke narratives across mutual or universal themes. Students write a shadow transcript noting non-verbal cues, gestures, and tone shifts.</p>
+          <div class="progress-row">
+            <div class="progress-wrap" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" aria-label="0% complete"><div class="progress-fill" style="width:0%"></div></div>
+            <span class="progress-pct">Start</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="module?id=m2" class="course-card c-blue" data-module="m2" role="listitem" aria-labelledby="m2-title">
+        <div class="course-card-top"></div>
+        <div class="course-card-body">
+          <div class="course-card-icon" aria-hidden="true">🗺️</div>
+          <div class="course-card-tag">Module 2</div>
+          <h3 class="course-card-title" id="m2-title">Language Mapping</h3>
+          <div class="course-card-lessons">6 lessons · 3 activities</div>
+          <p class="course-card-desc">Students take a map of their neighborhood, city, or region and mark the location of a person in the vicinity and the corresponding original location of their native language. Then consult the simplified UNESCO Language Vitality and Endangerment framework.</p>
+          <div class="progress-row">
+            <div class="progress-wrap" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" aria-label="0% complete"><div class="progress-fill" style="width:0%"></div></div>
+            <span class="progress-pct">Start</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="module?id=m3" class="course-card c-orange" data-module="m3" role="listitem" aria-labelledby="m3-title">
+        <div class="course-card-top"></div>
+        <div class="course-card-body">
+          <div class="course-card-icon" aria-hidden="true">🤝</div>
+          <div class="course-card-tag">Module 3</div>
+          <h3 class="course-card-title" id="m3-title">Apprentice-Partner Model</h3>
+          <div class="course-card-lessons">10 lessons · 5 activities</div>
+          <p class="course-card-desc">Students enter a structured partnership of 2–8 sessions of 45–90 minutes each. The defining rule: no translation. Activities include walking, gardening, cooking, making art, playing games, and telling stories. Students keep an apprentice journal.</p>
+          <div class="progress-row">
+            <div class="progress-wrap" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" aria-label="0% complete"><div class="progress-fill" style="width:0%"></div></div>
+            <span class="progress-pct">Start</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="module?id=m4" class="course-card c-purple" data-module="m4" role="listitem" aria-labelledby="m4-title">
+        <div class="course-card-top"></div>
+        <div class="course-card-body">
+          <div class="course-card-icon" aria-hidden="true">📰</div>
+          <div class="course-card-tag">Module 4</div>
+          <h3 class="course-card-title" id="m4-title">Magazine Portrait</h3>
+          <div class="course-card-lessons">7 lessons · 4 activities</div>
+          <p class="course-card-desc">Students write a one-to-two page language portrait: the language's place of origin, phonetic details, a speaker biography, and story excerpts. After completing it, students distribute at least 15 copies to friends, family, neighbors, libraries, and cafes.</p>
+          <div class="progress-row">
+            <div class="progress-wrap" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" aria-label="0% complete"><div class="progress-fill" style="width:0%"></div></div>
+            <span class="progress-pct">Start</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="module?id=m5" class="course-card c-teal" data-module="m5" role="listitem" aria-labelledby="m5-title">
+        <div class="course-card-top"></div>
+        <div class="course-card-body">
+          <div class="course-card-icon" aria-hidden="true">📊</div>
+          <div class="course-card-tag">Module 5</div>
+          <h3 class="course-card-title" id="m5-title">Language Vitality Assessment</h3>
+          <div class="course-card-lessons">9 lessons · 3 activities</div>
+          <p class="course-card-desc">Students set up 1–2 sessions to go through questions on the Vitality card. They give a score of 1 through 5 for each category, then tally the score out of 45. This gives an estimation of the language's state of vitality.</p>
+          <div class="progress-row">
+            <div class="progress-wrap" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" aria-label="0% complete"><div class="progress-fill" style="width:0%"></div></div>
+            <span class="progress-pct">Start</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="module?id=m6" class="course-card c-red" data-module="m6" role="listitem" aria-labelledby="m6-title">
+        <div class="course-card-top"></div>
+        <div class="course-card-body">
+          <div class="course-card-icon" aria-hidden="true">🌱</div>
+          <div class="course-card-tag">Module 6</div>
+          <h3 class="course-card-title" id="m6-title">Digital Seed Archive</h3>
+          <div class="course-card-lessons">5 lessons · 2 activities</div>
+          <p class="course-card-desc">An online interface where students submit files, documents, and recordings from their learning experience. The team at Lost Worlds Institute reviews each submission and, after organization and consideration, may publish the created resources.</p>
+          <div class="progress-row">
+            <div class="progress-wrap" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" aria-label="0% complete"><div class="progress-fill" style="width:0%"></div></div>
+            <span class="progress-pct">Start</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ WHY ══ -->
+<section class="section section-alt" id="why" aria-labelledby="why-heading">
+  <div class="section-inner">
+    <div class="section-hdr">
+      <div class="section-eyebrow">Why it matters</div>
+      <h2 class="section-title" id="why-heading">Preserving endangered languages</h2>
+      <p class="section-sub">Preserving endangered languages is a community-led effort. It would not be possible without engagement with other people, organizations, and communities.</p>
+    </div>
+    <blockquote class="callout">
+      <p>"40% of the world's roughly 7,000 languages are at risk of disappearing within the next three generations. The next speakers, those who will carry on the traditions of these languages, are of youth age."</p>
+    </blockquote>
+    <div class="why-grid" role="list">
+      <div class="why-card" role="listitem">
+        <div class="why-card-icon" style="background:var(--green-light);" aria-hidden="true">🌍</div>
+        <h4>Youth are first responders</h4>
+        <p>With language shift rising and social pressures to move away from Indigenous tongues, structured methodologies are needed. LARK is a youth-led framework that can guide students interested in doing this work.</p>
+      </div>
+      <div class="why-card" role="listitem">
+        <div class="why-card-icon" style="background:var(--blue-light);" aria-hidden="true">📖</div>
+        <h4>From interrogation to conversation</h4>
+        <p>Traditional language documentation asks speakers to translate sentences or name objects. This produces thin, artificial data. Real languages live not in thought-up phrases but in stories, arguments, instructions, narratives.</p>
+      </div>
+      <div class="why-card" role="listitem">
+        <div class="why-card-icon" style="background:var(--orange-light);" aria-hidden="true">🏫</div>
+        <h4>Open access curriculum</h4>
+        <p>This kit may be distributed and repurposed however schools, institutions, or individuals see fit, with credit to the original source. Not just PDFs and resources but an open-access service for K-12 students.</p>
+      </div>
+      <div class="why-card" role="listitem">
+        <div class="why-card-icon" style="background:var(--purple-light);" aria-hidden="true">🔬</div>
+        <h4>AP Seminar and research</h4>
+        <p>LARK connects to AP Seminar and AP Research methodologies. Students build portfolios of real fieldwork they can present to schools, competitions, and organizations like NACLO.</p>
+      </div>
+      <div class="why-card" role="listitem">
+        <div class="why-card-icon" style="background:var(--teal-light);" aria-hidden="true">🤲</div>
+        <h4>Community and consent</h4>
+        <p>It is important to respect communities in all manners of engagement. This kit is not a replacement of traditional language preservation methods but a framework to guide students interested in this work.</p>
+      </div>
+      <div class="why-card" role="listitem">
+        <div class="why-card-icon" style="background:var(--red-light);" aria-hidden="true">📡</div>
+        <h4>Youth-led attracts youth</h4>
+        <p>Lost Worlds Institute operates on the principle that youth leading the charge attracts more youth. Students can bring LARK to their own schools and administrations, almost like chapters of a club.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ LANGUAGE MAP ══ -->
+<section class="section" id="archive" aria-labelledby="map-heading">
+  <div class="section-inner">
+    <div class="section-eyebrow">Module 2</div>
+    <h2 class="section-title" id="map-heading">Language Mapping</h2>
+    <p class="section-sub">Students take a map of their neighborhood, city, or region. They mark the location of a given person and the corresponding original location of their native language. Ideally, students push beyond their family to engage their community.</p>
+    <div class="map-section" aria-label="Language map illustration">
+      <div class="map-text">
+        <h3>Map the languages around you</h3>
+        <p>Once mapped, students consult LARK's simplified version of UNESCO's Language Vitality and Endangerment framework to understand each language's status within its society and community.</p>
+        <a href="module?id=m2" class="btn btn-white btn-md">Start Language Mapping</a>
+      </div>
+      <div class="map-visual" aria-hidden="true">
+        <div class="map-grid"></div>
+        <div class="map-pin" style="top:32%;left:26%;"><div class="map-pin-ring"></div><div class="map-pin-dot"></div><div class="map-pin-label">Māori · NZ</div></div>
+        <div class="map-pin" style="top:54%;left:60%;"><div class="map-pin-ring" style="animation-delay:.8s;"></div><div class="map-pin-dot"></div><div class="map-pin-label">Nahuatl · MX</div></div>
+        <div class="map-pin" style="top:22%;left:68%;"><div class="map-pin-dot"></div><div class="map-pin-label">Manx · IM</div></div>
+        <div class="map-pin" style="top:68%;left:18%;"><div class="map-pin-ring" style="animation-delay:1.4s;"></div><div class="map-pin-dot"></div><div class="map-pin-label">Ainu · JP</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ MASTERY ══ -->
+<section class="section section-alt" aria-labelledby="mastery-heading">
+  <div class="section-inner">
+    <div class="section-hdr" style="text-align:center;max-width:520px;margin:0 auto 0;">
+      <div class="section-eyebrow">Progress system</div>
+      <h2 class="section-title" id="mastery-heading">Three levels of mastery</h2>
+      <p class="section-sub" style="margin:0 auto;">Each module has its own mastery levels. Complete lessons, finish fieldwork activities, and earn recognition from Lost Worlds Institute.</p>
+    </div>
+    <div class="mastery-row" role="list">
+      <div class="mastery-step" role="listitem">
+        <div class="mastery-dot" style="background:#C9B8FF;" aria-hidden="true">1</div>
+        <h4>Learner</h4>
+        <p>Core lessons complete. Ready to start your first elicitation session with a speaker in your community.</p>
+      </div>
+      <div class="mastery-step" role="listitem">
+        <div class="mastery-dot" style="background:var(--blue);" aria-hidden="true">2</div>
+        <h4>Documentarian</h4>
+        <p>Fieldwork activities complete. Shadow transcript produced and at least one heritage language speaker mapped.</p>
+      </div>
+      <div class="mastery-step" role="listitem">
+        <div class="mastery-dot" style="background:var(--green);" aria-hidden="true">3</div>
+        <h4>Field Linguist</h4>
+        <p>All 6 modules complete. Work uploaded to the Digital Seed Archive and reviewed by Lost Worlds Institute.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TESTIMONIALS ══ -->
+<section class="section" aria-labelledby="testi-heading">
+  <div class="section-inner">
+    <div class="section-hdr-row">
+      <div>
+        <div class="section-eyebrow">Student voices</div>
+        <h2 class="section-title" id="testi-heading">What students are saying</h2>
+      </div>
+    </div>
+    <div class="testi-grid" role="list">
+      <div class="testi-card" role="listitem">
+        <div class="testi-stars" aria-label="5 stars">★★★★★</div>
+        <p class="testi-quote">"I interviewed my grandmother for M-1 and learned three words in Punjabi that have no English equivalent. I had no idea she was a living archive."</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:var(--blue);" aria-hidden="true">P</div>
+          <div><div class="testi-name">Priya M.</div><div class="testi-grade">Grade 11 · Chicago, IL</div></div>
+        </div>
+      </div>
+      <div class="testi-card" role="listitem">
+        <div class="testi-stars" aria-label="5 stars">★★★★★</div>
+        <p class="testi-quote">"The Apprentice-Partner module with a Manx speaker was the most meaningful school project I've ever done. No tests, no translation — just cooking together and listening."</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:var(--teal);" aria-hidden="true">T</div>
+          <div><div class="testi-name">Thomas R.</div><div class="testi-grade">Grade 10 · Portland, OR</div></div>
+        </div>
+      </div>
+      <div class="testi-card" role="listitem">
+        <div class="testi-stars" aria-label="5 stars">★★★★★</div>
+        <p class="testi-quote">"I used my Magazine Portrait for my AP Seminar presentation. It was the most original research topic my teacher had ever graded."</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:var(--purple);" aria-hidden="true">A</div>
+          <div><div class="testi-name">Amara O.</div><div class="testi-grade">Grade 12 · Atlanta, GA</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA ══ -->
+<div class="cta-section">
+  <div class="cta-inner">
+    <h2>Students are our first responders.</h2>
+    <p>This kit may be distributed and repurposed however schools, institutions, or individuals see fit. Always free. Always open access.</p>
+    <div class="cta-btns">
+      <a href="module?id=m1" class="btn btn-white btn-lg">Start learning, free</a>
+      <button class="btn btn-white-outline btn-lg">Download the LARK kit</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <div class="footer-logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 2C9.5 2 7.5 3.5 6.5 5.5C5 5 3 5.5 2 7c1.5 0 2.5.5 3 1.5C3.5 9.5 3 11 3.5 12.5 4.5 11 6 10 7.5 10c.5 1.5.5 3 0 4.5C9 13.5 10.5 12.5 12 12.5s3 1 3.5 2C15 13 14.5 11.5 14 10c1.5 0 3 1 4 2.5.5-1.5 0-3-1.5-4C17.5 8 18.5 7 20 7c-1-1.5-3-2-4.5-1.5C14.5 3.5 13.5 2 12 2z"/></svg>
+          </div>
+          LARK
+        </div>
+        <p>Language Archive and Recovery Kit. A product of Lost Worlds Institute. Written, organized, and created by Siddharth Chopra.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Modules</h5>
+        <ul>
+          <li><a href="module?id=m1">M-1: Elicitation Protocol</a></li>
+          <li><a href="module?id=m2">M-2: Language Mapping</a></li>
+          <li><a href="module?id=m3">M-3: Apprentice-Partner</a></li>
+          <li><a href="module?id=m4">M-4: Magazine Portrait</a></li>
+          <li><a href="module?id=m5">M-5: Vitality Assessment</a></li>
+          <li><a href="module?id=m6">M-6: Digital Seed Archive</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Resources</h5>
+        <ul>
+          <li><a href="#">Download LARK Kit</a></li>
+          <li><a href="#">UNESCO Framework</a></li>
+          <li><a href="#">NACLO Pipeline</a></li>
+          <li><a href="#">AP Seminar Alignment</a></li>
+          <li><a href="#">For Teachers</a></li>
+          <li><a href="#">Start a Chapter</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Institute</h5>
+        <ul>
+          <li><a href="#">About Lost Worlds</a></li>
+          <li><a href="module?id=m6">Digital Seed Archive</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">License &amp; Attribution</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Lost Worlds Institute · LARK may be freely distributed and repurposed with credit to the original source.</p>
+      <div class="footer-tags">
+        <span class="footer-tag">Open access</span>
+        <span class="footer-tag">K–12</span>
+        <span class="footer-tag">Youth-led</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/auth.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
